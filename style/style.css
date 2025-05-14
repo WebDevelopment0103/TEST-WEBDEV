@@ -1486,11 +1486,6 @@ body {
     .button__wrapper2 {
         justify-content: center;
     }
-
-    .buttons__wrapper .btn {
-        margin-top: 10px;
-    }
-
     ::-webkit-scrollbar {
         background-color: #666;
         width: 4.5px;
@@ -1620,6 +1615,11 @@ body {
         padding: 10px;
         z-index: 998;
         border-top: solid 1px rgb(83, 83, 83);
+    }
+
+
+    .nav__list .nav__item .nav__link {
+        padding: 8px;
     }
 
     .hovered {
