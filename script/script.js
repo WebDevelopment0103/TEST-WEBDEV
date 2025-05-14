@@ -104,6 +104,12 @@ function updateTheme() {
                 document.querySelectorAll('.social-reddit a i').forEach(social => {
                     social.style.color = '#000';
                 });
+                document.querySelectorAll('.nav__link i').forEach(icon => {
+                    icon.style.color = '#000';
+                });
+                document.querySelectorAll('.hovered i , .hovered p').forEach(icon => {
+                    icon.style.color = '#fff';
+                });
 
             } else {
                 logos.forEach(logo => {
@@ -179,6 +185,9 @@ function updateTheme() {
                 });
                 document.querySelectorAll('.social-reddit a i').forEach(social => {
                     social.style.color = '#fff';
+                });
+                document.querySelectorAll('.nav__link i').forEach(icon => {
+                    icon.style.color = '#fff';
                 });
             }
         });

@@ -1609,7 +1609,7 @@ body {
         justify-content: space-between;
         align-items: center;
         background-color: var(--black-color);
-        width: 98.5%;
+        width: 100%;
         bottom: -100%;
         left: 0;
         padding: 10px;
@@ -1617,6 +1617,9 @@ body {
         border-top: solid 1px rgb(83, 83, 83);
     }
 
+    footer{
+        margin-bottom: 80px;
+    }
 
     .nav__list .nav__item .nav__link {
         padding: 8px;
