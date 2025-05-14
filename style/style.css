@@ -64,6 +64,7 @@ html {
 .logo img {
     width: 70px;
 }
+
 .header__main {
     display: flex;
     justify-content: space-between;
@@ -83,6 +84,7 @@ html {
 }
 
 .nav__list .nav__item .nav__link {
+    text-align: center;
     color: var(--white-color);
     font-size: 16px;
     padding: .7rem;
@@ -134,12 +136,6 @@ html {
     display: none;
 }
 
-.sidebar__btn {
-    color: var(--white-color);
-    font-size: 24px;
-    cursor: pointer;
-}
-
 .side__menu {
     position: fixed;
     transform: translateY(-100%);
@@ -159,11 +155,6 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-}
-
-.close__btn {
-    color: var(--white-color);
-    font-size: 24px;
 }
 
 .show-animate {
@@ -307,6 +298,7 @@ html {
 .social-links a i:hover {
     color: var(--button-color) !important;
 }
+
 @keyframes bounce {
     0% {
         transform: translateY(0);
@@ -1616,29 +1608,37 @@ body {
     }
 
     .navbar {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--black-color);
+        width: 98.5%;
+        bottom: -100%;
+        left: 0;
+        padding: 10px;
+        z-index: 998;
+        border-top: solid 1px rgb(83, 83, 83);
+    }
+
+    .hovered {
+        padding: 3px 3px;
     }
 
     .navbar p {
         color: var(--white-color);
         text-align: center;
-        margin-top: 50dvh;
     }
 
-    .nav__list {
-        display: block;
-        margin-top: 50px;
-        left: 50%;
-    }
-
-    .nav__item {
-        margin-top: 30px;
+    .nav__list .nav__item a {
+        display: block
     }
 
     .buttons__wrapper {
         display: flex;
         align-items: center;
-        padding: 30px 10px;
+        gap: 0;
     }
 
     .section1__wrapper {

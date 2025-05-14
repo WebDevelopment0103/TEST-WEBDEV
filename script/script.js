@@ -7,16 +7,6 @@ const toggleSwitch = document.querySelector('#checkbox');
 
 AOS.init();
 
-sidebarBtn.addEventListener('click', function (event) {
-    event.preventDefault();
-    sidebar.classList.add('active');
-});
-
-closeBtn.addEventListener('click', function (e) {
-    e.preventDefault();
-    sidebar.classList.remove('active');
-});
-
 function updateTheme() {
     var currentTheme = localStorage.getItem('theme');
     if (currentTheme) {
