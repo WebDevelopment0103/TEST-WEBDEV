@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://azaddev.netlify.app/sitemap.xml
