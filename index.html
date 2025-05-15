@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/style/style.css">
     <title>WebDevelopment</title>
 </head>
@@ -122,12 +121,12 @@
                 </div>
             </div>
         </section>
-        <section class="section2__wrapper" id="scroll-down-div">
+        <section class="section2__wrapper" data-aos="fade-left">
             <div class="words__wrapper container">
-                <h1 class="animate">About me -></h1>
+                <h1>About me -></h1>
             </div>
             <div class="info__wrapper2 container">
-                <p class="animate">Hello! I'm Azad — a passionate web developer and software engineer who loves turning
+                <p>Hello! I'm Azad — a passionate web developer and software engineer who loves turning
                     ideas into interactive digital experiences.
                     From designing sleek user interfaces to writing clean, efficient code, I enjoy every step of the
                     development journey.
@@ -136,7 +135,7 @@
                     Welcome to my digital space. Let's create something amazing together!</p>
             </div>
         </section>
-        <section id="section3__wrapper container">
+        <section id="section3__wrapper" class="container"  data-aos="fade-left">
             <div class="main__paragraf">
                 <h1>My Projects</h1>
             </div>
@@ -170,7 +169,7 @@
                 </div>
             </div>
         </section>
-        <section class="section4__wrapper">
+        <section class="section4__wrapper"  data-aos="fade-left">
             <div class="words__wrapper container">
                 <h1>What Sets Me Apart? -></h1>
             </div>
@@ -186,7 +185,7 @@
                 </p>
             </div>
         </section>
-        <section class="section5__wrapper container">
+        <section class="section5__wrapper container"  data-aos="fade-left">
             <div class="text__wrapper">
                 <div id="cubic-1"><img class="animate-spin-slow" src="/img/3d cube (2).png" alt=""></div>
                 <h1>If you have a great idea in <br>
@@ -197,7 +196,7 @@
                 <div id="cubic-2"><img class="animate-spin-slow" src="/img/3d cube (2).png" alt=""></div>
             </div>
         </section>
-        <section class="section6__wrapper ">
+        <section class="section6__wrapper "  data-aos="fade-left">
             <div class="words__wrapper container">
                 <h1>Why Choose Me? -></h1>
             </div>
@@ -214,7 +213,7 @@
 
     </div>
     </section>
-    <section class="section7__wrapper">
+    <section class="section7__wrapper"  data-aos="fade-left">
         <h1 class="main__paragraf">Comments</h1>
         <div class="comments-container container">
             <div class="comments">
@@ -243,17 +242,13 @@
                 </div>
             </div>
             <div class="right__part">
-                <p>Copyright © 2023, All Right Reserved by WebDevelopment</p>
+                <p>Copyright © 2025, All Right Reserved by WebDevelopment</p>
                 <p>wepdeveloper0103@gmail.com</p>
             </div>
         </div>
     </footer>
     </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="script/script.js"></script>
     <script type="text/javascript">
         const comments = [
@@ -297,6 +292,12 @@
             commentsContainer.appendChild(commentCard);
         });
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // animasyon süresi (ms)
+      once: false     // her scroll'da yeniden çalışsın
+    });
+  </script>
 </body>
-
 </html>

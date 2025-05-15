@@ -5,8 +5,6 @@ const logolink = document.querySelector('.logo a');
 const submitbutton = document.querySelector('.submit-id');
 const toggleSwitch = document.querySelector('#checkbox');
 
-AOS.init();
-
 function updateTheme() {
     var currentTheme = localStorage.getItem('theme');
     if (currentTheme) {
