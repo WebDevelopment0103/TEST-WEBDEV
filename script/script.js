@@ -5,6 +5,9 @@ const logolink = document.querySelector('.logo a');
 const submitbutton = document.querySelector('.submit-id');
 const toggleSwitch = document.querySelector('#checkbox');
 
+
+AOS.init()
+
 function updateTheme() {
     var currentTheme = localStorage.getItem('theme');
     if (currentTheme) {
@@ -231,8 +234,6 @@ function animateText() {
 }
 animateText();
 
-
-
 document.querySelector(".scroll-down").addEventListener("click", () => {
     window.scrollTo({
         top: targetPosition,
@@ -240,3 +241,18 @@ document.querySelector(".scroll-down").addEventListener("click", () => {
     });
 });
 
+const navbar = document.querySelector(".navbar");
+
+function toggleNavbarVisibility() {
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const pageHeight = document.documentElement.scrollHeight;
+
+    if (scrollPosition >= pageHeight - 10) {
+        navbar.style.opacity = "0";
+    } else {
+        navbar.style.opacity = "1"; // veya "block" — navbar yapına göre değişir
+    }
+}
+
+window.addEventListener("scroll", toggleNavbarVisibility);
+window.addEventListener("load", toggleNavbarVisibility);

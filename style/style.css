@@ -2,7 +2,6 @@
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -36,8 +35,6 @@ a {
 body,
 html {
     height: 100dvh;
-    width: 100vw;
-    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
     background-color: var(--black-color);
     position: relative;
@@ -106,6 +103,7 @@ html {
     text-decoration: none;
     font-weight: 520;
 }
+
 .btn-1 a {
     color: var(--white-color);
     font-weight: 550;
@@ -331,7 +329,6 @@ html {
 }
 
 .section1__wrapper {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -351,86 +348,23 @@ html {
     background-color: var(--section-color);
     padding: 20px 30px;
     min-height: 280px;
-    margin-top: 50px;
     text-wrap: wrap;
 }
-/* 
-.section2__wrapper>* {
-    animation: appearLeft 1s ease-out forwards;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
-
-
-.section4__wrapper>* {
-    animation: appearRight 1s ease-out forwards;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
-
-.section6__wrapper>* {
-    animation: appearLeft 0.5s ease-out forwards;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
- */
-
-.section6-wrapper {
-    background-color: var(--section-color);
-    padding: 20px 30px;
-    min-height: 280px;
-    margin-top: 40px;
-}
-
-/* .section6-wrapper>* {
-    animation: appearLeft 1s ease-out forwards;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-} */
 
 .section6__wrapper {
     margin-top: 250px;
 }
+.section6-wrapper {
+    background-color: var(--section-color);
+    padding: 20px 30px;
+    min-height: 280px;
+    margin-bottom: 70px;
+}
+
 
 .words__wrapper h1 {
     color: var(--white-color);
     font-size: 23px;
-}
-
-@keyframes appearLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-50%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes appearRight {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-@keyframes appearBottom {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
 }
 
 .info__wrapper {
@@ -472,9 +406,16 @@ span {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     color: var(--black-color);
-    /* animation: appearLeft 1s ease-out forwards;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%; */
+    margin-left: -30px;
+}
+
+.main__paragraf-2 {
+    background-color: var(--button2-color);
+    width: 400px;
+    padding: 15px 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: var(--black-color);
 }
 
 .projects__wrapper {
@@ -491,9 +432,6 @@ span {
 .project {
     width: calc(33.33% - 15px);
     margin-top: 20px;
-    /* animation: appearBottom 1s ease-out forwards;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%; */
 }
 
 .projects__wrapper .project {
@@ -589,9 +527,6 @@ span {
 
 .text__wrapper {
     position: relative;
-    /* animation: appearBottom 1s ease-out forwards;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%; */
 }
 
 .button-center {
@@ -607,7 +542,6 @@ span {
 footer {
     background-color: var(--footer-color);
     padding: 20px 10px;
-    margin-top: 50px;
     transition: 1s;
 }
 
@@ -670,6 +604,7 @@ footer {
 
 .page-section {
     margin-top: 170px;
+    height: auto;
 }
 
 .card {
@@ -678,9 +613,9 @@ footer {
     max-height: 500px;
     padding: 50px 40px;
     border-radius: 30px 100px;
-    /* animation: appearBottom 1s ease-out forwards;
+    animation: appearBottom 1s ease-out forwards;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%; */
+    animation-range: entry 0% cover 40%;
 }
 
 .card-3 .page-info ul li {
@@ -1485,6 +1420,7 @@ body {
     .button__wrapper2 {
         justify-content: center;
     }
+
     ::-webkit-scrollbar {
         background-color: #666;
         width: 4.5px;
@@ -1614,9 +1550,10 @@ body {
         padding: 10px;
         z-index: 998;
         border-top: solid 1px rgb(83, 83, 83);
+        transition: 300ms ease-in-out;
     }
 
-    footer{
+    footer {
         margin-bottom: 80px;
     }
 
