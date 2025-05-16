@@ -34,11 +34,10 @@ a {
 
 body,
 html {
-    height: 100dvh;
     font-family: 'Montserrat', sans-serif;
     background-color: var(--black-color);
-    position: relative;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
+    overflow-x: hidden;
 }
 
 .container {
